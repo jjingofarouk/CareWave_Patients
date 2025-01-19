@@ -1,0 +1,114 @@
+.medical-imaging-hub {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F5F7FA; /* Light Gray */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #009688;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .cases-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    justify-content: space-between;
+  }
+  
+  .case-card {
+    background-color: #dfe4e5;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 1 1 calc(45% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .case-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .case-image-container {
+    max-height: 200px;
+    overflow: hidden;
+  }
+  
+  .case-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .case-title {
+    font-size: 1.25em;
+    color: #004C54;
+  }
+  
+  .case-description {
+    color: #333333;
+  }
+  
+  .no-cases {
+    text-align: center;
+    font-size: 1.2em;
+    color: #D32F2D;
+  }
+  
+  
+  /* Pagination controls */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .pagination button {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .pagination button:hover {
+    background-color: #E0F7FA;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .pagination .active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .pagination button[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+
+  .pagination .react-paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
